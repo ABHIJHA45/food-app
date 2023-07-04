@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-black">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-success">
         <div className="container-fluid">
           <Link
-            className="navbar-brand fs-2 text-success text-bold fw-bold "
+            className="navbar-brand fs-2 text-light text-bold fw-bold "
             to="/"
           >
             FOODIE

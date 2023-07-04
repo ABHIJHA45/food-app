@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Card from "../components/Card";
+import Carousel from "../components/Carousal";
 
 export default function Home() {
   return (
@@ -9,22 +11,17 @@ export default function Home() {
         <Navbar />
       </div>
       <div>
-        <div
-          className="card mt-3"
-          style={{ width: "18rem", maxHeight: "360px" }}
-        >
-          <img className="card-img-top" src="..." alt="Card image cap" />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-        </div>
+        <Carousel />
       </div>
+      <div className="m-3">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
+
       <div>
-        <Footer></Footer>
+        <Footer />
       </div>
     </div>
   );
