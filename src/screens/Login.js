@@ -7,7 +7,7 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch("http://localhost:5000/api/login", {
       // credentials: 'include',
       // Origin:"http://localhost:3000/login",
       method: "POST",
@@ -23,7 +23,7 @@ export default function Login() {
     console.log(json);
     if (json.success) {
       //save the auth toke to local storage and redirect
-      localStorage.setItem("userEmail", credentials.email);
+      // localStorage.setItem("userEmail", credentials.email);
       localStorage.setItem("token", json.authToken);
       navigate("/");
     } else {
@@ -52,7 +52,7 @@ export default function Login() {
           className="w-50 m-auto mt-5 border bg-dark border-success rounded"
           onSubmit={handleSubmit}
         >
-          <div className="m-3">
+          <div className="m-3 text-light">
             <label htmlFor="exampleInputEmail1" className="form-label">
               Email address
             </label>
@@ -68,7 +68,7 @@ export default function Login() {
               We'll never share your email with anyone.
             </div>
           </div>
-          <div className="m-3">
+          <div className="m-3 text-light">
             <label htmlFor="exampleInputPassword1" className="form-label">
               Password
             </label>
@@ -80,10 +80,10 @@ export default function Login() {
               name="password"
             />
           </div>
-          <button type="submit" className="m-3 btn btn-success">
+          <button type="submit" className="m-3 btn btn-success text-light">
             Submit
           </button>
-          <Link to="/signup" className="m-3 mx-1 btn btn-danger">
+          <Link to="/signup" className="m-3 mx-1 btn btn-danger text-light">
             New User
           </Link>
         </form>

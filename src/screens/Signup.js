@@ -88,7 +88,7 @@ export default function Signup() {
           className="w-50 m-auto mt-5 border bg-dark border-success rounded"
           onSubmit={handleSubmit}
         >
-          <div className="m-3">
+          <div className="m-3 text-light">
             <label htmlFor="name" className="form-label">
               Name
             </label>
@@ -101,7 +101,7 @@ export default function Signup() {
               aria-describedby="emailHelp"
             />
           </div>
-          <div className="m-3">
+          <div className="m-3 text-light">
             <label htmlFor="email" className="form-label">
               Email address
             </label>
@@ -114,7 +114,7 @@ export default function Signup() {
               aria-describedby="emailHelp"
             />
           </div>
-          <div className="m-3">
+          <div className="m-3 text-light">
             <label htmlFor="address" className="form-label">
               Address
             </label>
@@ -140,7 +140,7 @@ export default function Signup() {
               Click for current Location{" "}
             </button>
           </div>
-          <div className="m-3">
+          <div className="m-3 text-light">
             <label htmlFor="exampleInputPassword1" className="form-label">
               Password
             </label>
@@ -152,10 +152,10 @@ export default function Signup() {
               name="password"
             />
           </div>
-          <button type="submit" className="m-3 btn btn-success">
+          <button type="submit" className="m-3 btn btn-success text-light">
             Submit
           </button>
-          <Link to="/login" className="m-3 mx-1 btn btn-danger">
+          <Link to="/login" className="m-3 mx-1 btn btn-danger text-light">
             Already a user
           </Link>
         </form>
